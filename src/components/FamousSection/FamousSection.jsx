@@ -54,16 +54,16 @@ function FamousSection() {
           <input id="role-input" onChange={e => setPersonRole(e.target.value)} />
           <button type="submit">Done</button>
         </form>
-        <p>
+        {/* <p>
           {famousPersonName} is famous for "{famousPersonRole}".
-        </p>
+        </p> */}
         <ul>
           {/* TODO: Render the list of famous people */}
-          {famousPeopleArray.map(people=>{
+          {famousPeopleArray.map(people => (
             <li key={people.id}>
               {people.name} is famous for {people.role}
             </li>
-          })}
+          ))}
         </ul>
       </section>
     );
